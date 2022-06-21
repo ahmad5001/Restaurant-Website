@@ -1,0 +1,6 @@
+function getAllMeals() {
+
+}
+function getMealByID() {
+
+}

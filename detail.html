@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Roboto&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav">
+        <img src="projectImages/logo-White.svg">
+        <ul>
+            <li><a href=index.html>Home</a></li>
+            <li><a href=#Menu>Menu</a></li>
+            <li><a href=#Gallery>Gallery</a></li>
+            <li><a href=#Testimonialsenu>Testimonials</a></li>
+            <li><a href=#Contactus>Contact us</a></li>
+            <li><a href=#Serach>Serach</a></li>
+            <li><a href=#Profile>Profile</a></li>
+            <li><a href=#Cart>Cart<span class="Ncart">0</span></a></li>
+        </ul>
+    </div>
+    <section id="Gallery">
+        <div class="sandwich">
+            <img src="projectImages/meal1.png" alt="burger">
+            <br>
+            <br>
+            <div class="sandwich-detail">
+                <h1>Best sandwich</h1>
+                <p>23.9 SAR</p>
+                <p>⭐4.5 rating</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum veritatis sequi hic quod mollitia excepturi dolorum saepe voluptatem, doloremque, quia quisquam enim ducimus esse dignissimos provident repellat iste praesentium?</p>
+                <button class="square negative" onclick="negative()">-</button>
+                <button class="square"><span class="Nubmerofcart">1</span></button>
+                <button class="square positive" onclick="positive()">+</button>
+                <button class="addtocart" onclick="addtocart()">add to cart</button>
+            </div>
+        </div>
+        <div class="description">
+            <h2>description</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta architecto laboriosam itaque hic doloremque in laborum, labore voluptatibus eligendi unde nam error est nesciunt blanditiis. Nostrum totam cumque quidem ducimus.</p>
+        </div>
+        <div class="nutri">
+            <h4><strong>nutrition facts</strong></h4>
+            <table class="table revG">
+                <tr>
+                    <td colspan="3"><strong>Supplement facts</strong></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Serving Szie:</strong> 1 Cookie (57g)</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Serving Per Container:</strong> 12</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>Amount Per Serving</strong></td>
+                    <td><strong>%Daily Vaule*</strong></td>
+                </tr>
+                <tr>
+                    <td>Calories</td>
+                    <td>200</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Calories from Fat</td>
+                    <td>70</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Total Fat</td>
+                    <td>7 g</td>
+                    <td>11%</td>
+                </tr>
+                <tr>
+                    <td>Staurated Fat</td>
+                    <td>4 g</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>Trans Fat</td>
+                    <td>0 g</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Cholestrtol</td>
+                    <td>0 mg</td>
+                    <td>0%</td>
+                </tr>
+                <tr>
+                    <td>sodium</td>
+                    <td>220 mg</td>
+                    <td>9%</td>
+                </tr>
+                <tr>
+                    <td>Total Carbohydrate</td>
+                    <td>31 g</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>Dietary Fiber</td>
+                    <td>5 g</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>Sugars</td>
+                    <td>12 g</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sugar ALcohol</td>
+                    <td>0 g</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>8 g</td>
+                    <td>8%</td>
+                </tr>
+                <tr>
+                    <td>Vitamin A</td>
+                    <td></td>
+                    <td>0%</td>
+                </tr>
+                <tr>
+                    <td>Vitamin C</td>
+                    <td></td>
+                    <td>0%</td>
+                </tr>
+                <tr>
+                    <td>Calcium</td>
+                    <td></td>
+                    <td>2%</td>
+                </tr>
+                <tr>
+                    <td>Iron</td>
+                    <td></td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <th colspan="3">* Percent Daily Values are based on a 2,000 Calorie diet. your daily values may be higher or lower depending on your calorie needs</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="reviews">
+        <div class="revG">
+            <h3>Reviews</h3>
+        </div>
+        <div class="review">
+            <img src="projectImages/man-eating-burger.png" alt="guy eating">
+            <div class="reviewP">
+                <h4>reviewer name</h4>
+                <h4>Dhahran - Feb 08, 2020 ⭐⭐⭐⭐⭐</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque doloremque error accusamus quia delectus fugiat velit facilis atque, asperiores aperiam maiores temporibus, quae, debitis architecto. Ex deleniti id sint placeat?</p>
+            </div>
+        </div>
+        <div class="revG">
+            <br><button id="button" onclick="review()">Add Your Review</button><br><br>
+            <form method="post" enctype="multipart/form-data" id="postForm">
+                <div class="wrapper">
+                    <div class="slideMeDown">
+                        <div>
+                            <label for="file">Image</label><br>
+                            <input type="file" id="file" name="myFile">
+                        </div>
+                        <div>
+                            <br><label for="rate">Rate the Food</label><br>
+                            <input type="range" id="rate" name="myRate" list="tickmarks">
+                            <datalist id="tickmarks">
+                                <option value="0" label="0%"></option>
+                                <option value="20"></option>
+                                <option value="50" label="50%"></option>
+                                <option value="70"></option>
+                                <option value="100" label="100%"></option>
+                                </datalist>
+                            <br>
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" placeholder="First and Last name">
+                            <br>
+                            <label for="review">Review</label>
+                            <p id="error" style="display: none;">Please type your review</p>
+                            <textarea onkeypress="trake()" maxlength="500" name="review" id="review" cols="50" placeholder="tyepe your review here max 500 character" rows="10" required></textarea>
+                        </div>
+                        <div>
+                            <p><span id="lengthoftext">0</span> / 500</p>
+                            <button type="button" class="submitW" onclick="Validator()">submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+<footer>
+
+    <section id="Contactus">
+        <div class="dcm">
+            <ul>
+                <div class="dc">
+                    <li>phone:+<strong>966-13-860-0000</strong></li>
+                    <li class="info">
+                        <img src="projectImages/clock.svg" alt="clock">
+                        <p class="c-info">sun-thr 11:00 - 23:00 <br><br>fri-sat 12:00-23</p>
+                    </li>
+                    <li class="info">
+                        <img src="projectImages/placeholder.svg" alt="placeholder">
+                        <p class="c-info">123 KFUPM stduents Mall<br> <br>Dhahran 34464</p>
+                    </li>
+                    <li class="midell"> <a href="Facebook.com">Facebook</a> <a href="Twitter.com">Twitter</a> <a href="Instagram.com">Instagram</a></li>
+                </div>
+
+            </ul>
+            <div><img class="m" src="projectImages/map.png" alt="map"></div>
+        </div>
+
+        <div class="footer">
+            <div class="e">
+                <img src="projectImages/logo-red.svg" alt="logo-red">
+                <div class="break"></div>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae doloribus harum eos. Quibusdam recusandae corporis cupiditate praesentium, numquam, doloribus eligendi alias, aperiam repellat minus mollitia rerum quod et magni!
+                </p>
+            </div>
+            <div>
+                <h3 style="color: #A80E0E;">USEFUL LINKS</h3>
+                <div class="break"></div>
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Menu">Menu</a></li>
+                    <li><a href="#Testimonials">Testimonials</a></li>
+                    <li><a href="#Contactus">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="feeds">
+                <p><strong>INTEGRAM FEEDS</strong></p>
+                <div class="fpic">
+                    <a href="www.instagram.com">
+                        <img src="projectImages/meal1.png" alt="burger" width="150" height="104" style="padding: 0.25rem;">
+                    </a>
+                    <a href="www.instagram.com">
+                        <img src="projectImages/meal2.png" alt="burger" width="150" height="104" style="padding: 0.25rem;">
+                    </a>
+                    <a href="www.instagram.com">
+                        <img src="projectImages/meal3.png" alt="burger" width="150" height="104" style="padding: 0.25rem;">
+                    </a>
+                    <div class="break"></div>
+                    <a href="www.instagram.com">
+                        <img src="projectImages/meal4.png" alt="burger" width="150" height="104" style="padding: 0.25rem;">
+                    </a>
+                    <a href="www.instagram.com">
+                        <img src="projectImages/meal5.png" alt="burger" width="150" height="104" style="padding: 0.25rem;">
+                    </a>
+                    <a href="www.instagram.com">
+                        <img src="projectImages/meal6.png" alt="burger" width="150" height="104" style="padding: 0.25rem;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+
+</footer>
+
+</html>
